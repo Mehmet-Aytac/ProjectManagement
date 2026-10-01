@@ -1,0 +1,13 @@
+Legend: R = Responsible / A = Accountable / C = Consulted / I = Informed,,,,,,,
+Activity / Deliverable,Sponsor,Project Manager,Product Owner,Tech Lead,UX Designer,QA Lead,End Users
+Project charter,A,R,C,C,I,I,I
+Requirements specification,I,A,R,C,C,C,C
+Work breakdown structure,I,A/R,C,C,C,C,
+Budget approval,A,R,C,I,I,I,
+UX design and prototypes,I,I,A,C,R,I,C
+Technical architecture,I,C,C,A/R,I,C,
+Development sprints,I,I,A,R,C,C,
+Test plan and UAT,I,C,A,C,I,R,C
+Release / go-live decision,A,R,C,C,I,C,I
+Status reporting,I,A/R,C,C,I,I,
+Lessons learned,I,A/R,C,C,C,C,I

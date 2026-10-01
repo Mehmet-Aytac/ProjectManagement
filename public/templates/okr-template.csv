@@ -1,0 +1,7 @@
+Quarter,Objective,Key Result,Owner,Baseline,Target,Current,Progress %,Confidence (1-10),Initiatives,Notes
+Q1 2026,Deliver a customer portal users actually love,Raise onboarding completion rate,Product Owner,48%,75%,61%,48,7,Guided setup wizard,
+Q1 2026,Deliver a customer portal users actually love,Reduce support tickets about login,Support Lead,320/month,150/month,240/month,47,6,SSO + password reset flow,
+Q1 2026,Deliver a customer portal users actually love,Reach SUS usability score,UX Designer,62,80,71,50,8,Two rounds of usability testing,
+Q1 2026,Make delivery predictable,Sprint commitment reliability,Scrum Master,65%,90%,78%,52,7,Refinement guidelines,
+Q1 2026,Make delivery predictable,Lead time from commit to production,Tech Lead,9 days,3 days,6 days,50,5,CI/CD pipeline improvements,
+Q1 2026,Make delivery predictable,Projects reporting status on time,Project Manager,70%,100%,92%,73,9,Automated weekly status template,

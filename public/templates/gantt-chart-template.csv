@@ -1,0 +1,13 @@
+ID,Phase,Task,Owner,Start Date,End Date,Duration (days),Depends On,% Complete,Status,Milestone
+1,Initiation,Kick-off meeting and project charter sign-off,Project Manager,2026-01-05,2026-01-09,5,,100,Done,Yes
+2,Initiation,Stakeholder analysis,Project Manager,2026-01-07,2026-01-14,6,1,100,Done,No
+3,Planning,Requirements workshops,Business Analyst,2026-01-12,2026-01-23,10,2,80,In Progress,No
+4,Planning,Work breakdown structure and estimates,Project Manager,2026-01-19,2026-01-30,10,3,50,In Progress,No
+5,Planning,Baseline schedule and budget approval,Sponsor,2026-02-02,2026-02-04,3,4,0,Not Started,Yes
+6,Execution,UX design and prototyping,Designer,2026-02-02,2026-02-27,20,3,0,Not Started,No
+7,Execution,Sprint 1 - core features,Tech Lead,2026-02-16,2026-03-06,15,6,0,Not Started,No
+8,Execution,Sprint 2 - integrations,Tech Lead,2026-03-09,2026-03-27,15,7,0,Not Started,No
+9,Monitoring,Weekly status reporting,Project Manager,2026-02-02,2026-04-24,60,5,0,Not Started,No
+10,Closing,User acceptance testing,QA Lead,2026-03-30,2026-04-10,10,8,0,Not Started,No
+11,Closing,Go-live,Tech Lead,2026-04-13,2026-04-13,1,10,0,Not Started,Yes
+12,Closing,Lessons learned and handover,Project Manager,2026-04-14,2026-04-24,9,11,0,Not Started,Yes

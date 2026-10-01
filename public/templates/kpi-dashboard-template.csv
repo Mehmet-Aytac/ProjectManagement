@@ -1,0 +1,9 @@
+KPI,Category,Definition,Formula,Unit,Frequency,Owner,Target,Green,Amber,Red,Current,Data Source
+Schedule Performance Index (SPI),Schedule,Earned value vs planned value,EV / PV,Ratio,Bi-weekly,Project Manager,1.00,>= 0.95,0.85 - 0.94,< 0.85,0.97,Project schedule
+Cost Performance Index (CPI),Cost,Earned value vs actual cost,EV / AC,Ratio,Monthly,Project Manager,1.00,>= 0.95,0.85 - 0.94,< 0.85,0.91,Finance report
+Budget Variance,Cost,Difference between budget and actual spend,(Budget - Actual) / Budget,%,Monthly,Finance Partner,0%,+/- 5%,+/- 10%,> 10%,4%,ERP
+Milestones on Time,Schedule,Share of milestones hit on baseline date,On-time milestones / Total milestones,%,Monthly,Project Manager,90%,>= 90%,75 - 89%,< 75%,86%,Project schedule
+Defect Escape Rate,Quality,Defects found after release,Prod defects / Total defects,%,Per release,QA Lead,< 5%,< 5%,5 - 10%,> 10%,3%,Issue tracker
+Stakeholder Satisfaction,Stakeholders,Survey score from key stakeholders,Average survey score,1-5,Quarterly,Project Manager,4.5,>= 4.3,3.8 - 4.2,< 3.8,4.4,Survey
+Team Velocity Stability,Delivery,Variation in sprint velocity,Std dev / Mean velocity,%,Per sprint,Scrum Master,< 15%,< 15%,15 - 25%,> 25%,12%,Jira
+Open High Risks,Risk,Count of risks scored 15 or above,Count,Number,Weekly,Project Manager,0,0 - 1,2 - 3,> 3,2,Risk register

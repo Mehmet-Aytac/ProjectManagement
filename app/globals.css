@@ -1,0 +1,127 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: 'Bricolage Grotesque', 'Bricolage Grotesque Fallback', ui-sans-serif, system-ui;
+  --font-mono: 'JetBrains Mono', 'JetBrains Mono Fallback', ui-monospace, monospace;
+  --color-marker: var(--marker);
+  --color-marker-foreground: var(--marker-foreground);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+}
+
+/*
+  Palette: cool drafting paper, ink navy, cobalt (primary), highlighter yellow (marker), slate gray.
+*/
+:root {
+  color-scheme: light;
+  --background: #f1f2ee;
+  --foreground: #15203b;
+  --card: #f8f9f6;
+  --card-foreground: #15203b;
+  --popover: #f8f9f6;
+  --popover-foreground: #15203b;
+  --primary: #2342c8;
+  --primary-foreground: #f8f9f6;
+  --secondary: #e4e6e1;
+  --secondary-foreground: #15203b;
+  --muted: #e4e6e1;
+  --muted-foreground: #5d6475;
+  --accent: #e4e6e1;
+  --accent-foreground: #15203b;
+  --marker: #f3d54e;
+  --marker-foreground: #15203b;
+  --destructive: #b42318;
+  --border: #c9ccd2;
+  --input: #c9ccd2;
+  --ring: #2342c8;
+  --radius: 0.375rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+@layer utilities {
+  .graph-paper {
+    background-image:
+      linear-gradient(to right, color-mix(in oklab, var(--border) 45%, transparent) 1px, transparent 1px),
+      linear-gradient(to bottom, color-mix(in oklab, var(--border) 45%, transparent) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  .marker-highlight {
+    background-image: linear-gradient(transparent 58%, var(--marker) 58%, var(--marker) 92%, transparent 92%);
+    padding-inline: 0.1em;
+  }
+}
+
+@keyframes bar-grow {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-bar-grow {
+  transform-origin: left center;
+  animation: bar-grow 900ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-rise-in {
+  animation: rise-in 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-bar-grow,
+  .animate-rise-in {
+    animation: none;
+  }
+}

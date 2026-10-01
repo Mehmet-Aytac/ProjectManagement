@@ -1,0 +1,6 @@
+Risk ID,Date Raised,Risk Description,Category,Cause,Probability (1-5),Impact (1-5),Score (P x I),Response Strategy,Response Actions,Owner,Due Date,Status
+R-01,2026-01-08,Key stakeholders unavailable for requirements workshops,Stakeholders,Year-end commitments,4,3,12,Mitigate,Book sessions 3 weeks ahead and offer async review,Project Manager,2026-01-15,Open
+R-02,2026-01-08,Third-party API changes break integration,Technical,Vendor roadmap not shared,3,5,15,Mitigate,Contract tests and vendor sync every 2 weeks,Tech Lead,2026-02-01,Open
+R-03,2026-01-12,Scope creep from late feature requests,Scope,Unclear acceptance criteria,4,4,16,Avoid,Change control board and signed scope baseline,Project Manager,2026-01-30,Open
+R-04,2026-01-20,Senior developer leaves mid-project,Resources,Market demand,2,4,8,Mitigate,Pair programming and documented architecture,Tech Lead,Ongoing,Monitoring
+R-05,2026-01-22,Budget overrun on cloud costs,Cost,Unoptimised environments,2,3,6,Accept,Monthly cost review with alerts,Finance Partner,Monthly,Monitoring

@@ -1,0 +1,18 @@
+WBS Code,Level,Deliverable / Work Package,Description,Owner,Estimate (hours),Acceptance Criteria
+1,1,Project Name,Top-level deliverable,Project Manager,,
+1.1,2,Project Management,Planning control and reporting,Project Manager,,
+1.1.1,3,Project charter,Approved scope objectives and sponsor,Project Manager,16,Signed by sponsor
+1.1.2,3,Project schedule,Baseline Gantt with dependencies,Project Manager,24,Baseline approved
+1.1.3,3,Status reports,Weekly progress and risk updates,Project Manager,40,Delivered every Friday
+1.2,2,Discovery,Understand needs and constraints,Business Analyst,,
+1.2.1,3,Stakeholder interviews,10-12 interviews with summary,Business Analyst,32,Findings report reviewed
+1.2.2,3,Requirements backlog,Prioritised user stories,Product Owner,40,Backlog refined for 2 sprints
+1.3,2,Design,User experience and interface,UX Designer,,
+1.3.1,3,Wireframes,Low-fidelity flows for key journeys,UX Designer,30,Approved by product owner
+1.3.2,3,UI design system,Components colours and type,UX Designer,48,Documented in design tool
+1.4,2,Build,Implementation of the solution,Tech Lead,,
+1.4.1,3,Front-end,Web interface,Front-end Developer,160,Passes code review and tests
+1.4.2,3,Back-end and API,Services and data layer,Back-end Developer,180,API contract tests pass
+1.5,2,Test and Release,Quality assurance and deployment,QA Lead,,
+1.5.1,3,Test cases and UAT,Functional and acceptance testing,QA Lead,60,No open critical defects
+1.5.2,3,Go-live and handover,Deployment and documentation,Tech Lead,24,Signed handover checklist
