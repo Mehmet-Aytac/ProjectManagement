@@ -8,11 +8,11 @@ import { projects, type ProjectCategory } from '@/lib/site-data'
 import { SectionHeading } from '@/components/section-heading'
 import { cn } from '@/lib/utils'
 
-const filters: Array<'All' | ProjectCategory> = ['All', 'Software', 'Web design']
+const filters: Array<'Tümü' | ProjectCategory> = ['Tümü', 'Software', 'Web design']
 
 export function ProjectsSection() {
-  const [filter, setFilter] = useState<(typeof filters)[number]>('All')
-  const visible = filter === 'All' ? projects : projects.filter((p) => p.category === filter)
+  const [filter, setFilter] = useState<(typeof filters)[number]>('Tümü')
+  const visible = filter === 'Tümü' ? projects : projects.filter((p) => p.category === filter)
 
   return (
     <section id="deliverables" aria-labelledby="deliverables-title" className="border-y border-border bg-card">
@@ -20,14 +20,14 @@ export function ProjectsSection() {
         <SectionHeading
           id="deliverables-title"
           code="2.0"
-          kicker="Deliverables"
-          title="Software I've led and websites I've designed."
-          description="Each entry is logged like a deliverable: what it was, what I owned, and what actually changed once it shipped."
+          kicker="Çalışmalar"
+          title="Geliştirdiğim yazılımlar ve tasarladığım web çalışmaları."
+          description="Her çalışma; ne olduğunu, hangi kısmını üstlendiğimi ve ortaya çıkan sonucu açıkça anlatır."
         />
 
-        <div role="group" aria-label="Filter projects" className="mt-10 flex flex-wrap gap-2">
+        <div role="group" aria-label="Çalışmaları filtrele" className="mt-10 flex flex-wrap gap-2">
           {filters.map((f) => {
-            const count = f === 'All' ? projects.length : projects.filter((p) => p.category === f).length
+            const count = f === 'Tümü' ? projects.length : projects.filter((p) => p.category === f).length
             return (
               <button
                 key={f}
@@ -76,7 +76,7 @@ export function ProjectsSection() {
                 <div className="flex flex-col gap-5">
                   <div className="flex flex-wrap items-center gap-3 font-mono text-xs">
                     <span className="text-primary">{project.code}</span>
-                    <span className="rounded-sm border border-border px-2 py-0.5 uppercase tracking-widest">{project.category}</span>
+                    <span className="rounded-sm border border-border px-2 py-0.5 uppercase tracking-widest">{project.category === 'Software' ? 'Yazılım' : 'Web tasarımı'}</span>
                     <span className="text-muted-foreground">{project.period}</span>
                   </div>
 
@@ -86,23 +86,23 @@ export function ProjectsSection() {
 
                   <dl className="grid grid-cols-2 gap-4 border-y border-border py-4 text-sm">
                     <div className="flex flex-col gap-1">
-                      <dt className="font-mono text-xs uppercase tracking-widest text-muted-foreground">Client</dt>
+                      <dt className="font-mono text-xs uppercase tracking-widest text-muted-foreground">Proje sahibi</dt>
                       <dd>{project.client}</dd>
                     </div>
                     <div className="flex flex-col gap-1">
-                      <dt className="font-mono text-xs uppercase tracking-widest text-muted-foreground">My role</dt>
+                      <dt className="font-mono text-xs uppercase tracking-widest text-muted-foreground">Rolüm</dt>
                       <dd>{project.role}</dd>
                     </div>
                   </dl>
 
                   <p className="flex gap-3 text-pretty leading-relaxed">
                     <span className="mt-0.5 shrink-0 rounded-sm bg-marker px-1.5 font-mono text-xs leading-5 text-marker-foreground">
-                      RESULT
+                      SONUÇ
                     </span>
                     {project.outcome}
                   </p>
 
-                  <ul className="flex flex-wrap gap-2" aria-label="Tools and stack">
+                  <ul className="flex flex-wrap gap-2" aria-label="Araçlar ve teknoloji yığını">
                     {project.stack.map((tool) => (
                       <li key={tool} className="rounded-sm bg-secondary px-2 py-1 font-mono text-xs">
                         {tool}
@@ -117,7 +117,7 @@ export function ProjectsSection() {
                       rel="noreferrer"
                       className="inline-flex w-fit items-center gap-1 text-sm font-medium text-primary underline-offset-4 hover:underline"
                     >
-                      View project
+                      Çalışmayı görüntüle
                       <ArrowUpRight className="size-4" aria-hidden="true" />
                     </a>
                   ) : null}

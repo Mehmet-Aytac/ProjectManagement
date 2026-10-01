@@ -15,11 +15,11 @@ export function CareerGantt() {
         <span className="flex items-center gap-4 text-muted-foreground">
           <span className="flex items-center gap-1.5">
             <span aria-hidden="true" className="block h-2 w-4 rounded-sm bg-primary" />
-            Role
+            Rol
           </span>
           <span className="flex items-center gap-1.5">
             <span aria-hidden="true" className="block size-2 rotate-45 bg-marker ring-1 ring-foreground" />
-            Certification
+            Sertifika
           </span>
         </span>
       </figcaption>
@@ -27,7 +27,7 @@ export function CareerGantt() {
       <div className="overflow-x-auto">
         <div className="min-w-[44rem]">
           <div className="grid grid-cols-[10rem_1fr] sm:grid-cols-[14rem_1fr] border-b border-border font-mono text-xs text-muted-foreground">
-            <div className="px-4 py-2">Role / organisation</div>
+            <div className="px-4 py-2">Rol / organisation</div>
             <div className="relative">
               {years.map((year) => (
                 <span key={year} className="absolute top-2 pl-1" style={{ left: `${toPercent(year)}%` }}>
@@ -38,7 +38,7 @@ export function CareerGantt() {
                 className="absolute top-1.5 -translate-x-full rounded-l-sm bg-primary px-1.5 py-0.5 text-primary-foreground"
                 style={{ left: `${toPercent(TODAY)}%` }}
               >
-                Today
+                Bugün
               </span>
             </div>
           </div>

@@ -14,7 +14,7 @@ export function ToolkitSection() {
             code="4.0"
             kicker="Project toolkit · free downloads"
             title="The templates I actually use on real projects."
-            description="Gantt charts, OKRs, KPIs, RACI, WBS and more. Opens in Excel, Google Sheets, Numbers or Notion. Free to use and adapt."
+            description="Gantt çizelgeleri, OKR, KPI, RACI, WBS ve daha fazlası. Excel, Google Sheets, Numbers veya Notion ile açabilirsiniz. Ücretsiz kullanın ve ihtiyacınıza göre uyarlayın."
           />
         </div>
 
@@ -50,7 +50,7 @@ export function ToolkitSection() {
                   className="inline-flex items-center justify-center gap-2 rounded-md bg-primary px-4 py-2.5 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
                 >
                   <Download className="size-4" aria-hidden="true" />
-                  Download {template.title}
+                  {template.title} indir
                 </a>
               </article>
             </li>

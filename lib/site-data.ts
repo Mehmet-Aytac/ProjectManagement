@@ -1,39 +1,39 @@
 // Edit this file to personalise the whole site.
 
 export const profile = {
-  name: 'Alex Morgan',
+  name: 'Mehmet Aytaç',
   role: 'Project Leader',
-  tagline: 'Software, web design & the plans that hold them together',
-  location: 'Istanbul · Remote-friendly',
-  email: 'hello@alexmorgan.dev',
+  tagline: 'Yazılım, web tasarımı ve projeleri ayakta tutan planlar',
+  location: 'Türkiye · Uzaktan çalışmaya açık',
+  email: 'E-posta adresinizi ekleyin',
   links: {
     linkedin: 'https://www.linkedin.com/in/your-handle',
     github: 'https://github.com/your-handle',
   },
-  availability: 'Open to new projects from Nov 2026',
+  availability: 'Yeni projelere açığım',
   revision: 'Rev. 2026.10',
   intro:
-    "I started out writing front-end code and designing interfaces, then discovered I liked the space between people even more than the space between pixels. Today I lead software and web projects end to end — from the first messy whiteboard session to a stable release and a team that wants to work together again.",
+    "Temelim yazılım. Proje yönetimi eğitimimi herhangi bir sektöre bağlı olmadan, harici olarak aldım. Henüz iki alanda da profesyonel iş deneyimim yok; bu site, öğrendiklerimi, geliştirdiğim çalışmaları ve proje yönetimi için hazırladığım araçları şeffaf biçimde paylaşma alanım.",
 }
 
 export const charter = [
   {
-    label: 'Purpose',
+    label: 'Amaç',
     value:
-      'Turn ambitious ideas into shipped, usable products — without burning out the people who build them.',
+      'Fikirleri anlaşılır, kullanılabilir ve planlı çalışmalara dönüştürmek.',
   },
   {
-    label: 'Scope',
+    label: 'Kapsam',
     value:
-      'Web platforms, internal tools and mobile apps. Discovery, planning, delivery and handover. Hands-on with UX and front-end when it helps.',
+      'Yazılım ve web çalışmaları. Araştırma, planlama, teslim ve devir süreçlerine dair öğrendiklerimi ve ürettiklerimi paylaşmak.',
   },
   {
-    label: 'Methods',
-    value: 'Scrum and Kanban for delivery, PRINCE2-style governance for the big picture, and plain conversation for everything else.',
+    label: 'Yaklaşım',
+    value: 'Öğrenmeye, açık iletişime, görünür planlara ve ölçülebilir çıktılara dayalı bir yaklaşım.',
   },
   {
-    label: 'Constraints',
-    value: 'I will push back on unrealistic deadlines. I will also tell you early, not late.',
+    label: 'Şeffaflık',
+    value: 'Profesyonel iş deneyimim olmadığını açıkça belirtiyor; bu siteyi öğrenme ve üretim sürecimi görünür kılmak için kullanıyorum.',
   },
 ]
 
@@ -45,21 +45,13 @@ export type CareerRow = {
 }
 
 export const careerTimeline: { start: number; end: number; rows: CareerRow[]; milestones: { label: string; at: number }[] } = {
-  start: 2016,
+  start: 2026,
   end: 2027,
   rows: [
-    { role: 'Front-end Developer', org: 'Studio North', start: 2016, end: 2018.5 },
-    { role: 'UI / UX Designer', org: 'Freelance', start: 2017.5, end: 2020.25 },
-    { role: 'Technical Project Manager', org: 'Brightline Software', start: 2019.5, end: 2022.5 },
-    { role: 'Project Leader, Digital Products', org: 'Meridian Group', start: 2022.5, end: null },
+    { role: 'Yazılım temeli', org: 'Kişisel öğrenme', start: 2026, end: null },
+    { role: 'Proje yönetimi eğitimi', org: 'Bağımsız eğitim', start: 2026, end: null },
   ],
-  milestones: [
-    { label: 'Google UX', at: 2018.6 },
-    { label: 'PSM I', at: 2019.8 },
-    { label: 'PMP', at: 2021.4 },
-    { label: 'PRINCE2', at: 2023.3 },
-    { label: 'PMI-ACP', at: 2025.2 },
-  ],
+  milestones: [],
 }
 
 export type ProjectCategory = 'Software' | 'Web design'
@@ -85,7 +77,7 @@ export const projects: Project[] = [
     title: 'Fleetline — logistics tracking platform',
     category: 'Software',
     client: 'Regional logistics company',
-    role: 'Project Leader',
+role: 'Yazılım temeli · Proje yönetimi eğitimi',
     period: '2024 – 2025 · 11 months',
     summary:
       'Replaced three spreadsheets and a phone tree with a live dashboard for 400+ vehicles. Led a team of seven across two time zones, ran discovery with dispatchers, and kept the rollout depot-by-depot to limit risk.',

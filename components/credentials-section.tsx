@@ -10,18 +10,18 @@ export function CredentialsSection() {
       <SectionHeading
         id="credentials-title"
         code="3.0"
-        kicker="Credentials register"
-        title="Certified in the frameworks — fluent in the people."
-        description="Every credential listed with its ID so you can verify it with the issuing body."
+        kicker="Sertifika kaydı"
+        title="Yöntemlerde eğitimli, insan ilişkilerinde gelişmeye açık."
+        description="Sertifikaları, doğrulama için gerekli bilgilerle birlikte listeliyorum."
       />
 
       <div className="mt-10 overflow-hidden rounded-lg border border-foreground/80 bg-card">
         <div className="hidden grid-cols-[4rem_1fr_14rem_10rem_6rem] gap-4 border-b border-foreground/80 bg-secondary px-5 py-3 font-mono text-xs uppercase tracking-widest text-muted-foreground md:grid">
-          <span>Year</span>
-          <span>Credential</span>
-          <span>Issuer</span>
-          <span>Credential ID</span>
-          <span className="text-right">Verify</span>
+          <span>Yıl</span>
+          <span>Sertifika</span>
+          <span>Kurum</span>
+          <span>Sertifika no</span>
+          <span className="text-right">Doğrula</span>
         </div>
         <ul>
           {sorted.map((cert) => (
@@ -47,7 +47,7 @@ export function CredentialsSection() {
                 rel="noreferrer"
                 className="inline-flex items-center gap-1 text-sm font-medium text-primary underline-offset-4 hover:underline md:justify-end"
               >
-                Verify
+                Doğrula
                 <ArrowUpRight className="size-4" aria-hidden="true" />
                 <span className="sr-only">{cert.name}</span>
               </a>

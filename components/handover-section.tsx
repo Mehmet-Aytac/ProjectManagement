@@ -12,7 +12,7 @@ export function HandoverSection() {
 
   return (
     <section id="handover" aria-labelledby="handover-title" className="mx-auto max-w-6xl px-5 py-20">
-      <SectionHeading id="handover-title" code="5.0" kicker="Handover & sign-off" title="Have a project that needs a steady hand?" />
+      <SectionHeading id="handover-title" code="5.0" kicker="Devir ve kapanış" title="Düzenli bir planlama yaklaşımına mı ihtiyacınız var?" />
 
       <div className="mt-10 grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:items-start">
         <div className="flex flex-col gap-6">

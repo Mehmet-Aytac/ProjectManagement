@@ -1,11 +1,11 @@
 import { profile } from '@/lib/site-data'
 
 const navItems = [
-  { code: '1.0', label: 'Charter', href: '#charter' },
-  { code: '2.0', label: 'Deliverables', href: '#deliverables' },
-  { code: '3.0', label: 'Credentials', href: '#credentials' },
-  { code: '4.0', label: 'Toolkit', href: '#toolkit' },
-  { code: '5.0', label: 'Handover', href: '#handover' },
+  { code: '1.0', label: 'Yaklaşım', href: '#charter' },
+  { code: '2.0', label: 'Çalışmalar', href: '#deliverables' },
+  { code: '3.0', label: 'Sertifikalar', href: '#credentials' },
+  { code: '4.0', label: 'Araç seti', href: '#toolkit' },
+  { code: '5.0', label: 'İletişim', href: '#handover' },
 ]
 
 export function SiteHeader() {
@@ -24,7 +24,7 @@ export function SiteHeader() {
           </span>
         </a>
 
-        <nav aria-label="Main" className="hidden md:block">
+        <nav aria-label="Ana menü" className="hidden md:block">
           <ul className="flex items-center gap-1">
             {navItems.map((item) => (
               <li key={item.href}>
@@ -45,7 +45,7 @@ export function SiteHeader() {
             <span className="absolute inline-flex size-full animate-ping rounded-full bg-primary opacity-60 motion-reduce:animate-none" />
             <span className="relative inline-flex size-2 rounded-full bg-primary" />
           </span>
-          Available
+          Uygun
         </p>
       </div>
 
